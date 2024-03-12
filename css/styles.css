@@ -85,6 +85,8 @@ li {
 /* navigation 🤩=============================================================================================== */
 .header_underline {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .nav_flex {
@@ -136,7 +138,7 @@ li {
   line-height: 150%;
   letter-spacing: 0.02em;
   color: #2e2f42;
-  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .curentn {
@@ -177,7 +179,7 @@ li {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: var(--slate);
-  transition: color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* made all the nav hover 😁=============================================================================================== */
 
@@ -191,14 +193,16 @@ li {
 /* hero 😞 ======================================================================================*/
 .hero {
   padding: 188px 0;
+  background-color: #2e2f42;
   background-image: linear-gradient(
-      to right,
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/hero/people-office\ 1.jpg);
-
-  /* background-color: #2e2f42; */
+    url(../images/hero.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  max-width: 1440px;
   width: 100%;
   height: 100%;
   text-align: center;
@@ -221,18 +225,16 @@ li {
   min-width: 169px;
   margin: 0 auto;
   /* typography */
-
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.04em;
   color: var(--white);
-
   /* visual  */
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background-color: var(--iris);
   border-radius: 4px;
-  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .hero_button:hover,
 .hero_button:focus {
@@ -362,7 +364,7 @@ li {
   border-radius: 100%;
   margin-right: 24px;
   background-color: var(--iris);
-  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   cursor: pointer;
 }
 .team_social_item:last-child {
@@ -411,7 +413,7 @@ li {
   height: 300px;
   background-color: var(--iris);
   transform: translatey(100%);
-  transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .porfolio_item_layer_par {
   padding: 40px 32px;
@@ -526,7 +528,7 @@ li {
   height: 40px;
   background-color: var(--iris);
   border-radius: 100%;
-  transition: background-color 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .footer_social_links:hover {
   background-color: var(--green);
