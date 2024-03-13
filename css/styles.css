@@ -516,7 +516,7 @@ li {
 .footer_social_p {
   font-weight: 500;
   font-size: 16px;
-  line-height: 150%;
+  line-height: 1.5;
   letter-spacing: 0.02em;
   color: #fff;
   margin-bottom: 16px;
@@ -528,10 +528,9 @@ li {
 }
 .social_flex_f {
   display: flex;
+  gap: 16px;
 }
-.social_item_f {
-  margin-right: 16px;
-}
+
 .social_item_f:last-child {
   margin-right: 0;
 }
@@ -542,9 +541,13 @@ li {
   width: 40px;
   height: 40px;
   background-color: var(--iris);
-  border-radius: 100%;
+  border-radius: 50%;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.footer_social_links:hover {
+.footer_social_links:hover,
+.footer_social_links:focus {
   background-color: var(--green);
+}
+.footer_social_svg {
+  fill: var(--cloud);
 }
