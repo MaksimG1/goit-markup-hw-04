@@ -359,7 +359,6 @@ li {
 .team_social_item {
   width: 40px;
   height: 40px;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team_social_item:last-child {
   margin-right: 0;
@@ -372,8 +371,9 @@ li {
   height: 100%;
   width: 100%;
   background-color: var(--iris);
-  border-radius: 100%;
+  border-radius: 50%;
   cursor: pointer;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .team_social_item_link:hover,
 .team_social_item_link:focus {
@@ -409,6 +409,10 @@ li {
   margin-right: 24px;
   margin-bottom: 48px;
   background-color: var(--white);
+}
+.porfolio_item:hover {
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .porfolio_item_image {
   overflow: hidden;
